@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    hoi dit is een test
+    <header>
+        <h1>Welkom op mijn Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Over Mij</a></li>
+                <li><a href="#projects">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Over Mij</h2>
+        <p>Hier schrijf je een korte introductie over jezelf en je vaardigheden.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projecten</h2>
+        <div class="project">
+            <h3>Project Titel 1</h3>
+            <p>Beschrijving van project 1.</p>
+        </div>
+        <div class="project">
+            <h3>Project Titel 2</h3>
+            <p>Beschrijving van project 2.</p>
+        </div>
+        <!-- Voeg meer projecten toe indien nodig -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Bericht:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Verstuur</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mijn Portfolio. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
